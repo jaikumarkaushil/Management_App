@@ -16,8 +16,8 @@ app.use(cors());
 connectDB();
 
 app.use('/graphql', graphqlHTTP({
-    schema,
-    graphiql: process.env.NODE_ENV === 'development'
+  schema,
+  graphiql: process.env.NODE_ENV === 'development'
 }))
 
 app.listen(port, () => {
